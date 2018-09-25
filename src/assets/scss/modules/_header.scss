@@ -1,0 +1,38 @@
+header {
+  @apply .flex .items-center .bg-black .bg-top .bg-fixed .bg-cover .relative;
+  background: url('./assets/img/nav-bg.png');
+  height: 105px;
+
+  &::before {
+    @apply .absolute .pin .bg-black .opacity-75; 
+    content: '';
+  }
+
+  nav {
+    @apply .flex .mx-auto .justify-between .items-center;
+
+    .menu {
+      @apply .flex .items-center;
+
+      ul {
+        @apply .flex;
+
+        li {
+          @apply .px-4;
+
+          a {
+            @apply .text-white .text-xs .font-bold .tracking-wider;
+          }
+        }
+      }
+
+      > span {
+        @apply .text-grey .text-xs;
+      }
+
+      .btn {
+        @apply .mx-4;
+      }
+    }
+  }
+}

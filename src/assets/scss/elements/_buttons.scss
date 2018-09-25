@@ -1,0 +1,33 @@
+.btn {
+  @apply .text-white;
+  padding: 0 20px;
+  line-height: 30px;
+
+  &.btn-primary {
+    @apply .bg-green .rounded-full .font-bold .tracking-wider;
+  }
+}
+
+.btn-menu {
+  @apply .flex .flex-col .justify-between .items-end;
+  height: 21px;
+
+  .top,
+  .mid,
+  .bot {
+    @apply .w-full .bg-white;
+    height: 3px;
+    width: 30px;
+  }
+
+  .mid {
+    width: 25px;
+    transition: .25s all;
+  }
+
+  &:hover {
+    .mid {
+      width: 30px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+body {
+  @apply .font-montserrat .min-h-screen .flex;
+}
+
+ul {
+  @apply .list-reset;
+}
+
+.body {
+  @apply .flex .flex-1 .flex-col;
+
+  > * {
+    @apply .flex-1;
+  }
+
+  header,
+  footer {
+    @apply .flex-none;
+  }
+}

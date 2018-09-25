@@ -1,0 +1,17 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+// Global
+@import '/globals/icons';
+
+// Elements
+@import '/elements/buttons';
+@import '/elements/headings';
+@import '/elements/texts';
+
+// Modules
+@import '/modules/init';
+@import '/modules/header';
+@import '/modules/footer';
+@import '/modules/column';
