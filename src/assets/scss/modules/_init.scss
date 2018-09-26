@@ -1,24 +1,26 @@
-body {
+body { 
   @apply .font-montserrat .min-h-screen .flex;
-}
-
-ul {
-  @apply .list-reset;
 }
 
 .body {
   @apply .flex .flex-1 .flex-col .w-full;
 
-  > * {
-    @apply .flex-1;
+  > * { 
+    @apply .flex-1; 
   }
 
   header,
-  footer {
+  footer { 
     @apply .flex-none;
   }
 
   .layout {
-    @apply .bg-pale-light;
+    &.manager { 
+      @apply .bg-pale-light; 
+    }
   }
+}
+
+ul { 
+  @apply .list-reset; 
 }
