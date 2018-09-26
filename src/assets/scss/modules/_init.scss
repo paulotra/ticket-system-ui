@@ -7,7 +7,7 @@ ul {
 }
 
 .body {
-  @apply .flex .flex-1 .flex-col;
+  @apply .flex .flex-1 .flex-col .w-full;
 
   > * {
     @apply .flex-1;

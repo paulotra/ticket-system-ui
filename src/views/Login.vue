@@ -18,7 +18,7 @@
       <input class="btn btn-success btn-md w-full mb-3" type="submit" value="Sign in" />
       <p class="text-grey-sm mb-3">Or</p>
       <button type="button" class="btn btn-primary btn-md w-full mb-3 bg-blue-dark">
-        <i class="icon-facebook mr-2"></i>
+        <i class="icon-facebook mr-2 hidden sm:inline"></i>
         Sign in with facebook
       </button>
       <p class="text-grey-sm">

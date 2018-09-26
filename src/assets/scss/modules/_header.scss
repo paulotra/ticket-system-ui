@@ -14,20 +14,34 @@ header {
     .menu {
       @apply .flex .items-center;
 
-      ul {
-        @apply .flex;
+      .items {
+        @apply .flex .items-center;
+        
+        @include breakpoint(md) {
+          @apply .hidden;
+        }
 
-        li {
-          @apply .px-4;
+        ul {
+          @apply .flex;
 
-          a {
-            @apply .text-white .text-xs .font-bold .tracking-wider;
+          li {
+            @apply .px-4;
+
+            a {
+              @apply .text-white .text-xs .font-bold .tracking-wider;
+            }
           }
+        }
+
+        span {
+          @apply .text-grey .text-xs;
         }
       }
 
-      > span {
-        @apply .text-grey .text-xs;
+      @include breakpoint(md) {
+        .btn-menu {
+          @apply .flex;
+        }
       }
 
       .btn {

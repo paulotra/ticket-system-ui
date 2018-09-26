@@ -1,7 +1,24 @@
+.container {
+  @apply .overflow-hidden;
+
+  @include breakpoint(md) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .wrapper-sm {
   @apply .w-full;
   padding: 80px;
   max-width: 471px;
+
+  @include breakpoint(md) {
+    padding: 30px;
+
+    .input {
+      @apply .max-w-full;
+    }
+  }
 }
 
 .bordered-wrapper {

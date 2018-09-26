@@ -3,8 +3,17 @@ footer {
   padding: 70px 0 30px;
 
   .container {
+
     .cols {
       @apply .flex;
+
+      @include breakpoint(md) {
+        @apply .flex-col .text-center;
+
+        > :not(:first-child) {
+          @apply .mt-8;
+        }
+      }
 
       .col {
         @apply .flex-1;
@@ -17,11 +26,27 @@ footer {
         .links {
           @apply .flex;
 
+          @include breakpoint(md) {
+            @apply .inline-block;
+          }
+
           ul {
             @apply .flex-1;
 
+            @include breakpoint(md) {
+              @apply .inline-block .px-5;
+            }
+
+            @include breakpoint(sm) {
+              @apply .block .px-0;
+            }
+
             li {
               @apply .mb-4 .relative;
+
+              @include breakpoint(md) {
+                @apply .table;
+              }
 
               &::before {
                 @apply .absolute .pin-l .pin-y .m-auto .bg-white;
@@ -40,6 +65,10 @@ footer {
         form {
           @apply .w-full .flex;
           max-width: 360px;
+
+          @include breakpoint(md) {
+            @apply .mx-auto;
+          }
 
           [type="text"] {
             @apply .rounded-l .text-sm .font-roboto .text-grey-darker .flex-1 .bg-white;
@@ -67,6 +96,10 @@ footer {
 
         .social-links {
           @apply .flex .items-center .mt-6;
+
+          @include breakpoint(md) {
+            @apply .justify-center .pb-6;
+          }
 
           li {
             @apply .mr-5;

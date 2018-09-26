@@ -17,7 +17,7 @@
 }
 
 .btn-menu {
-  @apply .flex .flex-col .justify-between .items-end;
+  @apply .hidden .flex-col .justify-between .items-end;
   height: 21px;
 
   .top,
