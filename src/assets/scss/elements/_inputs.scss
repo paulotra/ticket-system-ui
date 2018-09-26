@@ -3,17 +3,21 @@ input {
 }
 
 .input {
-  @apply .text-base .text-grey .rounded-full .border .border-grey-lightest .w-full .pl-12 .pr-6;
+  @apply .text-base .text-grey-dark .rounded-full .border .border-grey-light .w-full .pl-12 .pr-6;
   max-width: 313px;
   line-height: 44px;
-  margin-bottom: 37px;
+  margin-bottom: 20px;
 
   &.iconed {
     + i {
-      @apply .text-grey .text-xl .absolute .pin-t .pin-l .m-auto .opacity-50 .ml-5;
+      @apply .text-grey-light .text-xl .absolute .pin-t .pin-l .m-auto .ml-5;
       line-height: 44px;
       margin-top: 1px;
     }
+  }
+
+  &::focus {
+
   }
 }
 
@@ -59,5 +63,5 @@ input {
 }
 
 ::-webkit-input-placeholder {
-  @apply .text-grey .font-light;
+  @apply .text-grey-light .font-light;
 }

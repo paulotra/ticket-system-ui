@@ -4,14 +4,14 @@
       <h2 class="mb-2">Sign in</h2>
       <p class="text-sm text-grey-lighter mb-16">Tickets.sa sign in account</p>
       <div class="relative">
-        <input class="input iconed" placeholder="Username" type="text" />
-        <i class="icon-user"></i>
+        <input class="input iconed" placeholder="Email" type="text" />
+        <i class="icon-mail"></i>
       </div>
       <div class="relative">
         <input class="input iconed" placeholder="Password" type="password" />
-        <i class="icon-lock"></i>
+        <i class="icon-closedlock"></i>
       </div>
-      <div class="relative flex justify-between -mt-3 mb-16">
+      <div class="relative flex justify-between mb-12">
         <label for="remember" class="text-grey-sm checkbox round"><input id="remember" type="checkbox" /><span>Remember me</span></label>
         <a class="text-grey-sm" href="#">Forgot Password?</a>
       </div>
@@ -21,7 +21,10 @@
         <i class="icon-facebook mr-2"></i>
         Sign in with facebook
       </button>
-      <p class="text-grey-sm">Dont have an account yet? <a class="text-grey-sm" href="#">Sign up</a></p>
+      <p class="text-grey-sm">
+        Dont have an account yet? 
+        <router-link :to="{ name: 'register' }" class="text-grey-sm">Sign up</router-link>
+      </p>
     </form>
   </div>
 </template>

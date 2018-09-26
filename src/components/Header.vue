@@ -11,7 +11,7 @@
             <a href="#">PRICING</a>
           </li>
           <li>
-            <a href="#">SIGN IN</a>
+            <router-link :to="{ name: 'login' }">SIGN IN</router-link>
           </li>
         </ul>
         <span>or</span>

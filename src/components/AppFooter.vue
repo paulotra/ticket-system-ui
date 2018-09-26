@@ -17,7 +17,7 @@
           </p>
         </div>
         <div class="col">
-          <h4 class="mb-8">USEFULL LINKS</h4>
+          <h4 class="mb-8">USEFUL LINKS</h4>
           <div class="links">
             <ul>
               <li><a href="#">Home</a></li>
