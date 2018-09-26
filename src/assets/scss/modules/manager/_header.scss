@@ -1,0 +1,90 @@
+header {
+  @apply .bg-mint .flex .justify-between;
+
+  .logo-wrapper {
+    @apply .bg-mint-light .flex .items-center;
+    min-height: 61px;
+    padding: 0 30px;
+  }
+
+  .event-title {
+    @apply .pl-8 .flex;
+
+    input {
+      @apply .bg-transparent .ml-2 .text-white .border-b .truncate .border-white .text-sm;
+      width: 90px;
+    }
+  }
+
+  .account {
+    @apply .flex .bg-mint-light .items-center .px-6;
+
+    i:first-child {
+      @apply .bg-white .rounded-full .text-mint-light .text-center .text-xl;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+    }
+
+    i:last-child {
+      @apply .text-sm .text-white;
+    }
+
+    p {
+      @apply .flex-1 .text-white .px-3;
+    }
+  }
+}
+
+.nav {
+  @apply .bg-pale .flex .justify-between;
+
+  > a {
+    @apply .text-white .bg-pale-dark .text-center .flex .justify-center .items-center;
+    width: 188px;
+  }
+
+  ul {
+    @apply .flex;
+
+    li {
+      @apply .px-8 .border-r .border-pale-dark;
+      line-height: 49px;
+
+      a {
+        @apply .text-white .flex .items-center .text-base;
+
+        i {
+          @apply .mr-2;
+        }
+      }
+    }
+  }
+}
+
+.sub-nav {
+  @apply .flex .bg-white;
+
+  ul {
+    @apply .flex;
+
+    li {
+      @apply .pl-8;
+      line-height: 49px;
+
+      i {
+        @apply .text-xl .mr-2 .text-mint;
+        margin-top: -2px;
+      }
+
+      a {
+        @apply .text-grey-darker .flex .justify-center .items-center;
+
+        &:hover,
+        &.active {
+          @apply .text-mint;
+        }
+      }
+    }
+  }
+}

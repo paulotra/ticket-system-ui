@@ -21,7 +21,9 @@ footer {
         p,
         a {
           @apply .font-roboto .text-white .text-sm;
+        }
 
+        a {
           &:hover {
             @apply .text-green-darker;
           }

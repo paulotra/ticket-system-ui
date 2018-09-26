@@ -14,7 +14,14 @@
 
 // Modules
 @import '/modules/init';
-@import '/modules/header';
-@import '/modules/footer';
 @import '/modules/column';
 @import '/modules/wrappers';
+
+.brochure {
+  @import '/modules/brochure/header';
+  @import '/modules/brochure/footer';
+}
+
+.manager {
+  @import '/modules/manager/header';
+}

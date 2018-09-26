@@ -56,6 +56,10 @@ let colors = {
   'grey-lightest': '#f2f2f2',
   'white': '#ffffff',
 
+  'pale-light': '#edf4f8',
+  'pale': '#9cb1bc',
+  'pale-dark': '#8fa2ac',
+
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
   'red-dark': '#cc1f1a',
@@ -87,6 +91,9 @@ let colors = {
   'green-light': '#51d88a',
   'green-lighter': '#a2f5bf',
   'green-lightest': '#e3fcec',
+
+  'mint-light': '#00b1b7',
+  'mint': '#00a6ac',
 
   'teal-darkest': '#0d3331',
   'teal-darker': '#20504f',

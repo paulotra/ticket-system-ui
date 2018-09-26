@@ -1,20 +1,17 @@
 <template>
-  <div class="layout brochure">
+  <div class="layout manager">
     <app-header></app-header>
     <router-view></router-view>
-    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-  import AppHeader from '@/components/brochure/Header'
-  import AppFooter from '@/components/brochure/Footer'
+  import AppHeader from '@/components/manager/Header'
   
   export default {
     name: 'app',
     components: {
       AppHeader,
-      AppFooter
     }
   }
 </script>
