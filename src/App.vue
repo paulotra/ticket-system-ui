@@ -8,7 +8,7 @@
 
 <script>
   import AppHeader from '@/components/Header'
-  import AppFooter from '@/components/AppFooter'
+  import AppFooter from '@/components/Footer'
   
   export default {
     name: 'app',

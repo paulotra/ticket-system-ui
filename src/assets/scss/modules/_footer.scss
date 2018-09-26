@@ -21,6 +21,10 @@ footer {
         p,
         a {
           @apply .font-roboto .text-white .text-sm;
+
+          &:hover {
+            @apply .text-green-darker;
+          }
         }
 
         .links {

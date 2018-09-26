@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="container relative">
-      <logo></logo>
+      <logo :fill="'#EDEDEE'" :width="162"></logo>
       <div class="menu">
         <div class="items">
           <ul>
@@ -16,7 +16,7 @@
             </li>
           </ul>
           <span>or</span>
-          <a href="" class="btn btn-success text-xs">CREATE ACCOUNT</a>
+          <router-link class="btn btn-success text-xs" :to="{ name: 'register' }">CREATE ACCOUNT</router-link>
         </div>
         <button class="btn-menu ml-4">
           <span class="top"></span>

@@ -29,6 +29,10 @@ header {
 
             a {
               @apply .text-white .text-xs .font-bold .tracking-wider;
+
+              &:hover {
+                @apply .text-green;
+              }
             }
           }
         }

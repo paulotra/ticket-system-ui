@@ -7,6 +7,12 @@ input {
   max-width: 313px;
   line-height: 44px;
   margin-bottom: 20px;
+  transition: $default_duration all;
+
+  &:focus {
+    @apply .border-transparent;
+    box-shadow: rgba(0, 0, 0, .085) 0 3px 15px;
+  }
 
   &.iconed {
     + i {
@@ -14,10 +20,6 @@ input {
       line-height: 44px;
       margin-top: 1px;
     }
-  }
-
-  &::focus {
-
   }
 }
 

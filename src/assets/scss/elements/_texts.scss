@@ -3,7 +3,8 @@ p {
 }
 
 a {
-  @apply .no-underline;
+  @apply .no-underline .outline-none;
+  transition: $default_duration all;
 
   &:hover {
     @apply .text-green;
