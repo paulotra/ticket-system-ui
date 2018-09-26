@@ -1,0 +1,9 @@
+.wrapper-sm {
+  @apply .w-full;
+  padding: 87px 80px 100px;
+  max-width: 471px;
+}
+
+.bordered-wrapper {
+	@apply .border-grey-lightest .rounded-lg;
+}

@@ -15,7 +15,7 @@
           </li>
         </ul>
         <span>or</span>
-        <a href="" class="btn btn-primary text-xs">CREATE ACCOUNT</a>
+        <a href="" class="btn btn-success text-xs">CREATE ACCOUNT</a>
         <button class="btn-menu ml-4">
           <span class="top"></span>
           <span class="mid"></span>

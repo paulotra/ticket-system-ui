@@ -1,3 +1,21 @@
+p {
+  @apply .text-sm .font-montserrat;
+}
+
 a {
   @apply .no-underline;
+
+  &:hover {
+    @apply .text-green;
+  }
+}
+
+.content {
+  p {
+    @apply .font-roboto;
+  }
+}
+
+.text-grey-sm {
+  @apply .text-grey .text-xs;
 }
