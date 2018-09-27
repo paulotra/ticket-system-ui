@@ -16,7 +16,7 @@ body {
 
   .layout {
     &.manager { 
-      @apply .bg-pale-light; 
+      @apply .bg-pale-light .flex .flex-col; 
     }
   }
 }

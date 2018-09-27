@@ -1,5 +1,5 @@
 .sidebar {
-  @apply .bg-white .py-10 .px-3 .rounded;
+  @apply .bg-white .py-10 .px-3 .rounded .border .border-grey-light;
   flex: 0 0 260px;
   max-width: 260px;
 

@@ -1,3 +1,15 @@
 .board {
-  @apply .p-5;
+  @apply .p-5 .flex .flex-1;
+
+  .content-wrapper {
+    @apply .flex-1 .ml-5 .flex-col .flex;
+
+    > .content {
+      @apply .bg-white .p-10 .flex-1 .rounded .border .border-grey-light;
+
+      p {
+        @apply .font-montserrat;
+      }
+    }
+  }
 }
