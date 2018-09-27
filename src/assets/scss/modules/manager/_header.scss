@@ -62,7 +62,7 @@ header {
   }
 }
 
-.sub-nav {
+.badges {
   @apply .flex .bg-white;
 
   ul {
@@ -83,6 +83,33 @@ header {
         &:hover,
         &.active {
           @apply .text-mint;
+        }
+      }
+    }
+  }
+}
+
+.badge-template {
+  @apply .flex .bg-pale-lighter;
+
+  ul {
+    @apply .flex .items-center;
+    li {
+      a {
+        @apply .pl-8 .flex .text-sm .text-mint .items-center;
+        line-height: 49px;
+
+        &:hover {
+          @apply .text-mint;
+        }
+
+        i {
+          @apply .text-lg .mr-2 .overflow-hidden .-mt-1;
+          width: 18px;
+
+          &:before {
+            @apply .-ml-2;
+          }
         }
       }
     }

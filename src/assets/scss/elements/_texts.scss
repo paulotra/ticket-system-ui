@@ -3,7 +3,7 @@ p {
 }
 
 a {
-  @apply .no-underline .outline-none;
+  @apply .no-underline .outline-none .cursor-pointer;
   transition: $default_duration all;
 
   &:hover {
