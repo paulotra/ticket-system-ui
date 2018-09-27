@@ -2,7 +2,8 @@ label {
   @apply .text-grey .text-sm .font-medium .pl-3 .mb-2 .block;
 }
 
-input[type="text"] {
+input[type="text"],
+.v-select {
   &:not(.unique) {
     @apply .bg-pale-light .w-full .rounded .border-grey-light .mb-4 .px-3 .text-sm .text-black;
     line-height: 38px;
@@ -11,4 +12,73 @@ input[type="text"] {
 
 ::-webkit-input-placeholder {
   @apply .text-grey;
+}
+
+.v-select {
+  > *:not(.dropdown-menu),
+  .selected-tag,
+  input {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .selected-tag {
+    opacity: 100 !important;
+    position: relative !important;
+  }
+
+  .clear {
+    @apply .hidden;
+  }
+
+  .dropdown-toggle {
+    @apply .border-0;
+
+    .open-indicator {
+      transform: none;
+
+      &::before {
+        @apply .border-0 .text-lg .text-mint;
+        content: "\E9CE";
+        height: 20px;
+        width: 20px;
+        transform: none;
+      }
+    }
+  }
+
+  input {
+    line-height: 38px !important;
+  }
+
+  .dropdown-menu {
+    @apply .-mt-1 .bg-pale-light .border-0 .shadow-none .rounded-b .overflow-auto;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .25);
+    max-height: 300px;
+
+    a {
+      @apply .px-3 .py-1 .text-xs;
+    }
+
+    li {
+      &:hover {
+        a {
+          @apply .bg-mint .text-white;
+        }
+      }
+    }
+
+    .active {
+      a {
+        @apply .bg-mint .text-white;
+      }
+    }
+
+    li.highlight,
+    li.highlight.active:hover {
+      a {
+        @apply .bg-mint .text-white;
+      }
+    }
+  }
 }

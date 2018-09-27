@@ -2,7 +2,7 @@
   <header>
     <div class="flex items-center">
       <div class="logo-wrapper">
-        <logo :fill="'#FFFFFF'" :width="162"></logo>
+        <logo :fill="'#FFFFFF'" :width="162" />
       </div>
       <div class="event-title">
         <h4 class="text-white">Tellers Events<span class="border-l border-white mx-2"></span>Event 1</h4>

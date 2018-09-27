@@ -1,11 +1,11 @@
 <template>
   <div class="layout manager">
-    <app-header></app-header>
-    <navigation></navigation>
-    <badges></badges>
-    <badge-template></badge-template>
+    <app-header />
+    <navigation />
+    <badges />
+    <badge-template />
     <div class="board">
-      <router-view></router-view>
+      <router-view />
     </div>
   </div>
 </template>

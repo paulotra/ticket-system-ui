@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="container relative">
-      <logo :fill="'#EDEDEE'" :width="162"></logo>
+      <logo :fill="'#EDEDEE'" :width="162" />
       <div class="menu">
         <div class="items">
           <ul>
