@@ -60,6 +60,7 @@ let colors = {
   'pale-light': '#edf4f8',
   'pale': '#9cb1bc',
   'pale-dark': '#8fa2ac',
+  'pale-darker': '#83959e',
 
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
@@ -95,6 +96,7 @@ let colors = {
 
   'mint-light': '#00b1b7',
   'mint': '#00a6ac',
+  'mint-dark': '#02979c',
 
   'teal-darkest': '#0d3331',
   'teal-darker': '#20504f',

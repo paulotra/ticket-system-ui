@@ -104,8 +104,8 @@ header {
         }
 
         i {
-          @apply .text-lg .mr-2 .overflow-hidden .-mt-1;
-          width: 18px;
+          @apply .text-lg .mr-2;
+          margin-top: -1px;
 
           &:before {
             @apply .-ml-2;

@@ -1,0 +1,14 @@
+label {
+  @apply .text-grey .text-sm .font-medium .pl-3 .mb-2 .block;
+}
+
+input[type="text"] {
+  &:not(.unique) {
+    @apply .bg-pale-light .w-full .rounded .border-grey-light .mb-4 .px-3 .text-sm .text-black;
+    line-height: 38px;
+  }
+}
+
+::-webkit-input-placeholder {
+  @apply .text-grey;
+}

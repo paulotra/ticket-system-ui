@@ -6,7 +6,7 @@
       </div>
       <div class="event-title">
         <h4 class="text-white">Tellers Events<span class="border-l border-white mx-2"></span>Event 1</h4>
-        <input type="text" value="Edit Event" />
+        <input class="unique" type="text" value="Edit Event" />
       </div>
     </div>
     <div class="flex">

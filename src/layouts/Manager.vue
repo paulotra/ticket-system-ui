@@ -4,7 +4,9 @@
     <navigation></navigation>
     <badges></badges>
     <badge-template></badge-template>
-    <router-view></router-view>
+    <div class="board">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 

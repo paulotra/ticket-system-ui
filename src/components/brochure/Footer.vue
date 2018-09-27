@@ -37,7 +37,7 @@
           <h4 class="mb-8">SUBSCRIBE</h4>
           <p class="leading-normal mb-3">subscribe our mailing list to get update to your email inbox</p>
           <form action="#">
-            <input placeholder="Email" type="text" />
+            <input class="unique" placeholder="Email" type="text" />
             <button type="submit"><i class="icon-arrow-right"></i></button>
           </form>
           <ul class="social-links">
