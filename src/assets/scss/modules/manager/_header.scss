@@ -1,76 +1,117 @@
 header {
-  @apply .bg-mint .flex .justify-between;
+  @apply bg-mint flex justify-between items-center;
+
+  @include breakpoint(lg) {
+    @apply fixed pin-t pin-x;
+  }
 
   .logo-wrapper {
-    @apply .bg-mint-light .flex .items-center;
+    @apply bg-mint-light flex items-center;
     min-height: 61px;
     padding: 0 30px;
   }
 
   .event-title {
-    @apply .pl-8 .flex;
+    @apply px-8 flex;
+
+    > h4 {
+      @apply truncate;
+      max-width: 300px;
+    }
 
     input {
-      @apply .bg-transparent .ml-2 .text-white .border-b .truncate .border-white .text-sm;
+      @apply bg-transparent ml-2 text-white border-b truncate border-white text-sm;
       width: 90px;
+    }
+
+    @include breakpoint(lg) {
+      input {
+        @apply hidden;
+      }
+    }
+
+    @include breakpoint(md) {
+      > h4 {
+        max-width: none;
+
+        > span {
+          @apply hidden;
+        }
+      }
+    }
+  }
+
+  .settings {
+    line-height: 61px;
+
+    @include breakpoint(md) {
+      @apply hidden;
     }
   }
 
   .account {
-    @apply .flex .bg-mint-light .items-center .px-6;
+    @apply flex bg-mint-light items-center px-6;
 
     i:first-child {
-      @apply .bg-white .rounded-full .text-mint-light .text-center .text-xl;
+      @apply bg-white rounded-full text-mint-light text-center text-xl;
       width: 36px;
       height: 36px;
       line-height: 36px;
     }
 
     i:last-child {
-      @apply .text-sm .text-white;
+      @apply text-sm text-white;
     }
 
     p {
-      @apply .flex-1 .text-white .px-3;
+      @apply flex-1 text-white px-3;
     }
   }
 }
 
 .nav {
-  @apply .bg-pale .flex .justify-between;
+  @apply bg-pale flex justify-between;
+
+  @include breakpoint(lg) {
+    @apply fixed pin-x;
+    top: 61px;
+  }
+
+  @include breakpoint(md) {
+    @apply hidden;
+  }
 
   > a {
-    @apply .text-white .bg-pale-dark .text-center .flex .justify-center .items-center;
+    @apply text-white bg-pale-dark text-center flex justify-center items-center;
     width: 188px;
   }
 
   ul {
-    @apply .flex;
+    @apply flex;
 
     li {
-      @apply .px-8 .border-r .border-pale-dark;
+      @apply px-8 border-r border-pale-dark;
       line-height: 49px;
 
       a {
-        @apply .text-white .flex .items-center .text-base;
+        @apply text-white flex items-center text-base;
 
         i {
-          @apply .mr-2;
+          @apply mr-2;
         }
       }
     }
   }
 }
 
-.badges {
+> .badges {
   @apply .flex .bg-white;
 
   ul {
-    @apply .flex;
+    @apply .flex .flex-wrap; 
 
     li {
       @apply .pl-8;
-      line-height: 49px;
 
       i {
         @apply .text-xl .mr-2 .text-mint;
@@ -79,6 +120,7 @@ header {
 
       a {
         @apply .text-grey-darker .flex .justify-center .items-center;
+        height: 49px;
 
         &:hover,
         &.active {
@@ -87,17 +129,52 @@ header {
       }
     }
   }
+
+  @include breakpoint(lg) {
+    @apply .fixed .pin-b .z-50 .pin-l;
+    top: 111px;
+    width: 60px;
+
+    ul {
+      @apply .flex-col .w-full;
+
+      li {
+        @apply .px-0 .text-center;
+
+        &:hover {
+          @apply .bg-grey-lightest;
+        }
+
+        i {
+          @apply .mr-0;
+        }
+
+        span {
+          @apply .hidden;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(md) {
+    top: 61px;
+  }
 }
 
 .badge-template {
   @apply .flex .bg-pale-lighter;
 
+  @include breakpoint(lg) {
+    @apply .hidden;
+  }
+
   ul {
-    @apply .flex .items-center;
+    @apply .flex .items-center .flex-wrap;
+
     li {
       a {
         @apply .pl-8 .flex .text-sm .text-mint .items-center;
-        line-height: 49px;
+        height: 49px;
 
         &:hover {
           @apply .text-mint;
@@ -106,10 +183,6 @@ header {
         i {
           @apply .text-lg .mr-2;
           margin-top: -1px;
-
-          &:before {
-            @apply .-ml-2;
-          }
         }
       }
     }

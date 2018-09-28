@@ -1,55 +1,55 @@
 header {
-  @apply .flex .items-center .bg-black .bg-top .bg-fixed .bg-cover .relative;
+  @apply flex items-center bg-black bg-top bg-fixed bg-cover relative;
   background: url('./assets/img/nav-bg.png');
   height: 105px;
 
   &::before {
-    @apply .absolute .pin .bg-black .opacity-75; 
+    @apply absolute pin bg-black opacity-75; 
     content: '';
   }
 
   nav {
-    @apply .flex .mx-auto .justify-between .items-center;
+    @apply flex mx-auto justify-between items-center;
 
     .menu {
-      @apply .flex .items-center;
+      @apply flex items-center;
 
       .items {
-        @apply .flex .items-center;
+        @apply flex items-center;
         
         @include breakpoint(md) {
-          @apply .hidden;
+          @apply hidden;
         }
 
         ul {
-          @apply .flex;
+          @apply flex;
 
           li {
-            @apply .px-4;
+            @apply px-4;
 
             a {
-              @apply .text-white .text-xs .font-bold .tracking-wider;
+              @apply text-white text-xs font-bold tracking-wider;
 
               &:hover {
-                @apply .text-green;
+                @apply text-green;
               }
             }
           }
         }
 
         span {
-          @apply .text-grey .text-xs;
+          @apply text-grey text-xs;
         }
       }
 
       @include breakpoint(md) {
         .btn-menu {
-          @apply .flex;
+          @apply flex;
         }
       }
 
       .btn {
-        @apply .mx-4;
+        @apply mx-4;
       }
     }
   }

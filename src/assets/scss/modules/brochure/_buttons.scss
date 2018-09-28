@@ -1,26 +1,26 @@
 .btn {
-  @apply .text-white .cursor-pointer;
+  @apply text-white cursor-pointer;
   padding: 0 20px;
   line-height: 30px;
   transition: $default_duration all;
 
   &:hover {
-    @apply .text-white;
+    @apply text-white;
   }
 
   &.btn-primary {
-    @apply .bg-blue-dark .rounded-full .font-bold .tracking-wider;
+    @apply bg-blue-dark rounded-full font-bold tracking-wider;
 
     &:hover {
-      @apply .bg-blue-darker;
+      @apply bg-blue-darker;
     }
   }
 
   &.btn-success {
-    @apply .bg-green .rounded-full .font-bold .tracking-wider;
+    @apply bg-green rounded-full font-bold tracking-wider;
 
     &:hover {
-      @apply .bg-green-dark;
+      @apply bg-green-dark;
     }
   }
 
@@ -29,26 +29,3 @@
   }
 }
 
-.btn-menu {
-  @apply .hidden .flex-col .justify-between .items-end;
-  height: 21px;
-
-  .top,
-  .mid,
-  .bot {
-    @apply .w-full .bg-white;
-    height: 3px;
-    width: 30px;
-  }
-
-  .mid {
-    width: 25px;
-    transition: .25s all;
-  }
-
-  &:hover {
-    .mid {
-      width: 30px;
-    }
-  }
-}

@@ -4,43 +4,43 @@
       <li>
         <a>
           <i class="icon-badge"></i>
-          Name Badge
+          <span>Name Badge</span>
         </a>
       </li>
       <li>
         <a>
           <i class="icon-award"></i>
-          Certificates
+          <span>Certificates</span>
         </a>
       </li>
       <li>
         <a>
           <i class="icon-tablet"></i>
-          Kiosk Made
+          <span>Kiosk Made</span>
         </a>
       </li>
       <li>
         <a>
           <i class="icon-file"></i>
-          Guest List
+          <span>Guest List</span>
         </a>
       </li>
       <li>
         <a>
           <i class="icon-blog"></i>
-          Events Page
+          <span>Events Page</span>
         </a>
       </li>
       <li>
         <a>
           <i class="icon-artboard"></i>
-          Theme
+          <span>Theme</span>
         </a>
       </li>
       <li>
         <a>
           <i class="icon-dock"></i>
-          Smart Sessions
+          <span>Smart Sessions</span>
         </a>
       </li>
     </ul>

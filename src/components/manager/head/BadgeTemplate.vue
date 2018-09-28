@@ -4,61 +4,61 @@
       <li>
         <a>
           <i class="icon-circle-in"></i>
-          Full Name
+          <span>Full Name</span>
         </a>
       </li>
       <li>
         <a>
           <i class="icon-circle-in"></i>
-          First Name
+          <span>First Name</span>
         </a>
       </li>
       <li>
         <a>
           <i class="icon-circle-in"></i>
-          Last Name
+          <span>Last Name</span>
         </a>
       </li>
       <li>
         <a>
           <i class="icon-circle-in"></i>
-          Email
+          <span>Email</span>
         </a>
       </li>
       <li>
         <a>
           <i class="icon-circle-in"></i>
-          Phone
+          <span>Phone</span>
         </a>
       </li>
       <li>
         <a>
           <i class="icon-circle-in"></i>
-          Registration Type
+          <span>Registration Type</span>
         </a>
       </li>
       <li>
         <a>
           <i class="icon-circle-in"></i>
-          Company Name
+          <span>Company Name</span>
         </a>
       </li>
       <li>
         <a>
           <i class="icon-circle-in"></i>
-          Job Title
+          <span>Job Title</span>
         </a>
       </li>
       <li>
         <a>
           <i class="icon-circle-in"></i>
-          Tickets ID
+          <span>Tickets ID</span>
         </a>
       </li>
       <li>
         <a>
           <i class="icon-circle-in"></i>
-          Source ID
+          <span>Source ID</span>
         </a>
       </li>
     </ul>

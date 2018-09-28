@@ -1,29 +1,35 @@
 .btn {
-  @apply .text-sm .text-white .font-medium .rounded .px-10 .inline-flex .outline-none;
+  @apply text-sm text-white font-medium rounded px-10 inline-flex outline-none;
   line-height: 38px;
   transition: $default_duration all;
 
   i {
-    @apply .text-xl;
+    @apply text-xl;
   }
 
   &.btn-sm {
-    @apply .px-6;
+    @apply px-6;
   }
 
   &.btn-success {
-    @apply .bg-mint;
+    @apply bg-mint;
 
     &:hover {
-      @apply .bg-mint-dark;
+      @apply bg-mint-dark;
     }
   }
 
   &.btn-default {
-    @apply .bg-pale-dark;
+    @apply bg-pale-dark;
 
     &:hover {
-      @apply .bg-pale-darker;
+      @apply bg-pale-darker;
     }
+  }
+}
+
+.btn-menu {
+  @include breakpoint(md) {
+    @apply flex;
   }
 }

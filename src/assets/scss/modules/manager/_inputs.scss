@@ -1,17 +1,17 @@
 label {
-  @apply .text-grey .text-sm .font-medium .pl-3 .mb-2 .block;
+  @apply text-grey text-sm font-medium pl-3 mb-2 block;
 }
 
 input[type="text"],
 .v-select {
   &:not(.unique) {
-    @apply .bg-pale-light .w-full .rounded .border-grey-light .mb-4 .px-3 .text-sm .text-black;
+    @apply bg-pale-light w-full rounded border-grey-light mb-4 px-3 text-sm text-black;
     line-height: 38px;
   }
 }
 
 ::-webkit-input-placeholder {
-  @apply .text-grey;
+  @apply text-grey;
 }
 
 .v-select {
@@ -28,17 +28,17 @@ input[type="text"],
   }
 
   .clear {
-    @apply .hidden;
+    @apply hidden;
   }
 
   .dropdown-toggle {
-    @apply .border-0;
+    @apply border-0;
 
     .open-indicator {
       transform: none;
 
       &::before {
-        @apply .border-0 .text-lg .text-mint;
+        @apply border-0 text-lg text-mint;
         content: "\E9CE";
         height: 20px;
         width: 20px;
@@ -52,32 +52,36 @@ input[type="text"],
   }
 
   .dropdown-menu {
-    @apply .-mt-1 .bg-pale-light .border-0 .shadow-none .rounded-b .overflow-auto;
+    @apply -mt-1 bg-pale-light border-0 shadow-none rounded-b overflow-auto;
     box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .25);
     max-height: 300px;
 
     a {
-      @apply .px-3 .py-1 .text-xs;
+      @apply px-3 py-1 text-xs;
+    }
+
+    .no-options {
+      @apply text-xs text-grey py-2;
     }
 
     li {
       &:hover {
         a {
-          @apply .bg-mint .text-white;
+          @apply bg-mint text-white;
         }
       }
     }
 
     .active {
       a {
-        @apply .bg-mint .text-white;
+        @apply bg-mint text-white;
       }
     }
 
     li.highlight,
     li.highlight.active:hover {
       a {
-        @apply .bg-mint .text-white;
+        @apply bg-mint text-white;
       }
     }
   }

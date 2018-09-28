@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-1">
+  <div class="inner">
     <div class="sidebar">
       <add-badge />
     </div>
     <div class="content-wrapper">
       <div class="content">
-        <div class="flex cols">
+        <div class="flex cols flex-wrap">
           <div class="col flex-1 flex items-center">
             <i class="icon-image text-4xl text-mint"></i>
             <div class="ml-2">

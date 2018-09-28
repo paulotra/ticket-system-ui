@@ -1,22 +1,22 @@
 body { 
-  @apply .font-montserrat .min-h-screen .flex;
+  @apply font-montserrat min-h-screen flex;
 }
 
 .body {
-  @apply .flex .flex-1 .flex-col .w-full;
+  @apply flex flex-1 flex-col w-full;
 
   > * { 
-    @apply .flex-1; 
+    @apply flex-1; 
   }
 
   header,
   footer { 
-    @apply .flex-none;
+    @apply flex-none;
   }
 
   .layout {
     &.manager { 
-      @apply .bg-pale-light .flex .flex-col; 
+      @apply bg-pale-light flex flex-col; 
     }
   }
 }
