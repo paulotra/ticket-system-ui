@@ -1,0 +1,73 @@
+body {
+  @apply .min-h-screen .flex .flex-col;
+
+  > .body {
+    @apply .flex .flex-1;
+  }
+}
+
+.layout {
+  @apply .flex .flex-1;
+
+  &.board {
+    &.light {
+      @apply .bg-grey-lighter;
+
+      > .wrapper {
+        > .inner {
+          @apply .bg-blue-lighter;
+        }
+      }
+    }
+
+    > .controller {
+      @apply .relative;
+      flex: 0 0 85px;
+
+      &::before {
+        @apply .absolute .shadow;
+        content: '';
+        right: -6px;
+        bottom: 30px;
+        top: 47px;
+        width: 1px;
+      }
+    }
+
+    > .wrapper {
+      @apply .flex-1 .relative .flex;
+      margin-top: 17px;
+
+      &::before {
+        @apply .absolute .shadow;
+        content: '';
+        right: 30px;
+        left: 30px;
+        top: 5px;
+        height: 1px;
+      }
+
+      > .inner {
+        @apply .relative .flex-1 .rounded-tl-md .flex .overflow-hidden;
+
+        .sidebar {
+          @apply .bg-white .relative .z-10;
+          flex: 0 0 240px;
+        }
+
+        .content {
+          @apply .flex-1 .relative;
+
+          &::before {
+          @apply .absolute .shadow;
+            content: '';
+            bottom: 30px;
+            left: -6px;
+            top: 30px;
+            width: 1px;
+          }
+        }
+      }
+    }
+  }
+}

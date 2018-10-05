@@ -7,30 +7,14 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: () => import('./layouts/Brochure.vue'),
+      component: () => import('./layouts/Board.vue'),
       children: [
         {
-          path: '/login',
+          path: '/',
           name: 'login',
-          component: () => import('./views/brochure/Login.vue')
+          component: () => import('./views/Browse.vue')
         },
-        {
-          path: '/register',
-          name: 'register',
-          component: () => import('./views/brochure/Register.vue')
-        }
       ]
     },
-    {
-      path: '/',
-      component: () => import('./layouts/Manager.vue'),
-      children: [
-        {
-          path: '/manager',
-          name: 'manager',
-          component: () => import('./views/manager/Front.vue')
-        }
-      ]
-    }
   ]
 })

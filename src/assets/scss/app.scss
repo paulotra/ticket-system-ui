@@ -13,21 +13,4 @@
 @import '/elements/buttons';
 
 // Modules
-@import '/modules/init';
-@import '/modules/column';
-@import '/modules/wrappers';
-
-.brochure {
-  @import '/modules/brochure/inputs';
-  @import '/modules/brochure/buttons';
-  @import '/modules/brochure/header';
-  @import '/modules/brochure/footer';
-}
-
-.manager {
-  @import '/modules/manager/inputs';
-  @import '/modules/manager/buttons';
-  @import '/modules/manager/header';
-  @import '/modules/manager/board';
-  @import '/modules/manager/sidebar';
-}
+@import '/modules/layout';

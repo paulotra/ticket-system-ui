@@ -46,21 +46,15 @@ View the full documentation at https://tailwindcss.com.
 let colors = {
   'transparent': 'transparent',
 
-  'black': '#000000',
+  'black': '#22292f',
   'grey-darkest': '#3d4852',
-  'grey-darker': '#626262',
+  'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',
-  'grey': '#a0a0a0',
+  'grey': '#b8c2cc',
   'grey-light': '#dae1e7',
-  'grey-lighter': '#a8aeb2',
-  'grey-lightest': '#f2f2f2',
+  'grey-lighter': '#FBFBFB',
+  'grey-lightest': '#f8fafc',
   'white': '#ffffff',
-
-  'pale-lighter': '#f2f7f9',
-  'pale-light': '#edf4f8',
-  'pale': '#9cb1bc',
-  'pale-dark': '#8fa2ac',
-  'pale-darker': '#83959e',
 
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
@@ -88,15 +82,11 @@ let colors = {
 
   'green-darkest': '#0f2f21',
   'green-darker': '#1a4731',
-  'green-dark': '#4ebc92',
-  'green': '#56d0a1',
+  'green-dark': '#1f9d55',
+  'green': '#38c172',
   'green-light': '#51d88a',
   'green-lighter': '#a2f5bf',
   'green-lightest': '#e3fcec',
-
-  'mint-light': '#00b1b7',
-  'mint': '#00a6ac',
-  'mint-dark': '#02979c',
 
   'teal-darkest': '#0d3331',
   'teal-darker': '#20504f',
@@ -107,12 +97,12 @@ let colors = {
   'teal-lightest': '#e8fffe',
 
   'blue-darkest': '#12283a',
-  'blue-darker': '#2d467a',
-  'blue-dark': '#3b5998',
+  'blue-darker': '#1c3d5a',
+  'blue-dark': '#2779bd',
   'blue': '#3490dc',
   'blue-light': '#6cb2eb',
-  'blue-lighter': '#bcdefa',
-  'blue-lightest': '#eff8ff',
+  'blue-lighter': '#F8F9FD',
+  'blue-lightest': '#F8F9FD',
 
   'indigo-darkest': '#191e38',
   'indigo-darker': '#2f365f',
@@ -180,7 +170,7 @@ module.exports = {
     'sm': '576px',
     'md': '768px',
     'lg': '992px',
-    'xl': '1160px',
+    'xl': '1200px',
   },
 
 
@@ -203,13 +193,19 @@ module.exports = {
   */
 
   fonts: {
-    'montserrat': [
-      'Montserrat',
-      'sans-serif'
-    ],
-    'roboto': [
+    'sans': [
+      'system-ui',
+      'BlinkMacSystemFont',
+      '-apple-system',
+      'Segoe UI',
       'Roboto',
-      'sans-serif'
+      'Oxygen',
+      'Ubuntu',
+      'Cantarell',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      'sans-serif',
     ],
     'serif': [
       'Constantia',
@@ -259,10 +255,10 @@ module.exports = {
     'base': '1rem',     // 16px
     'lg': '1.125rem',   // 18px
     'xl': '1.25rem',    // 20px
-    '2xl': '1.625rem',  // 26px
-    '3xl': '2.125rem',  // 34px
-    '4xl': '3.25rem',   // 52px
-    '5xl': '4.5rem',    // 72px
+    '2xl': '1.5rem',    // 24px
+    '3xl': '1.875rem',  // 30px
+    '4xl': '2.25rem',   // 36px
+    '5xl': '3rem',      // 48px
   },
 
 
@@ -329,7 +325,6 @@ module.exports = {
     'tight': '-0.05em',
     'normal': '0',
     'wide': '0.05em',
-    'wider': '0.1em',
   },
 
 
@@ -446,7 +441,8 @@ module.exports = {
   borderRadius: {
     'none': '0',
     'sm': '.125rem',
-    default: '.25rem',
+    default: '3px',
+    'md': '10px',
     'lg': '.5rem',
     'full': '9999px',
   },
@@ -752,7 +748,7 @@ module.exports = {
   */
 
   shadows: {
-    default: '0 2px 4px 0 rgba(0,0,0,0.10)',
+    default: '0 0 35px 0 rgba(0, 0, 0, .75)',
     'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
     'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
     'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
@@ -776,7 +772,6 @@ module.exports = {
 
   zIndex: {
     'auto': 'auto',
-    '-10': -10,
     '0': 0,
     '10': 10,
     '20': 20,
